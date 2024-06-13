@@ -3,6 +3,7 @@ class mainContent extends HTMLElement {
     super();
     this.innerHTML = ` 
       <main id="mainContent"></main>
+      
             `;
   }
 }
