@@ -6,7 +6,7 @@ import { createMakananItemTemplate } from '../../templates/template-creator';
 class FavoriteMakananView {
   getTemplate() {
     return `                
-        <h2 class="content__heading">Your Liked Makanan</h2>               
+        <h2 class="content__heading text-lg text-gray-700">Inilah Makanan Favoritmu !</h2>               
         <div class="makanan-result-container">
           <div id="makanan" class="foods">
 
@@ -18,7 +18,7 @@ class FavoriteMakananView {
   getFavoriteMakananTemplate() {
     return `
       <div class="content">
-        <h2 class="content__heading">Your Liked Makanan</h2>
+        <h2 class="content__heading text-lg text-gray-700">Inilah Makanan Favoritmu !</h2>
         <div id="makanan" class="foods">
         </div>
       </div>
@@ -54,7 +54,7 @@ class FavoriteMakananView {
   _getEmptyMakananTemplate() {
     return `
       <div class="makanan__not__found">
-        Tidak ada makanan untuk ditampilkan
+        Tidak ada makanan yang kamu favoritkan
       </div>
     `;
   }
