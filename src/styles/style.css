@@ -4,8 +4,7 @@
 }
 
 body {
-  font-family: "cursive", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Lora", serif;
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -79,10 +78,10 @@ body {
 }
 
 .logo {
-  width: 30vw;
-  height: 50vh;
+  width: 30vw; 
+  height: 50vh; 
   background-size: cover;
-  background-position: center;
+  background-position: center;     
 }
 
 .app-bar .app-bar__brand {
@@ -104,18 +103,6 @@ body {
   line-height: 24px;
 }
 
-.food__ringkasan {
-  background-color: #ffffff;
-  padding: 30px;
-  box-shadow: 3px 3px 5px 1px #070f2b;
-  border-radius: 8px;
-}
-.food__overview {
-  background-color: #ffffff;
-  padding: 20px;
-  box-shadow: 3px 3px 5px 1px #070f2b;
-  border-radius: 8px;
-}
 
 .app-bar .app-bar__navigation {
   line-height: 44px;
@@ -197,10 +184,12 @@ main {
 }
 
 .content .content__heading {
-  font-weight: normal;
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
   text-align: center;
-  color: #000000;
   font-weight: bold;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 /*
@@ -235,13 +224,16 @@ main {
 /*
     Movie Item
   */
-
+ 
 .food-item {
-  width: 100%;
-  box-shadow: 3px 3px 5px 1px #070f2b;
+  border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #496989;
+  width: 100%;
+  height: auto; 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .food-item:hover,
@@ -287,10 +279,13 @@ main {
   margin: 0 0 10px 0;
   min-width: 44px;
   min-height: 44px;
+
 }
 
 .food-item .food-item__content h3 a {
-  color: #ffffff;
+  color: black;
+  font-weight: 300;
+  font-style : italic;
   text-decoration: none;
   min-width: 44px;
   min-height: 44px;
@@ -318,8 +313,6 @@ main {
   */
 
 .food {
-  background-color: white;
-  padding: 5px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -328,11 +321,10 @@ main {
 
 .food .food__poster {
   width: 100%;
-  max-width: 1000px;
+  /* max-width: 800px;
+  max-height: 800px; */
 }
-.food__info {
-  width: 40%;
-}
+
 .food .food__info h4 {
   margin: 8px 0;
 }
@@ -348,7 +340,7 @@ main {
   text-align: center;
 }
 
-.detail-coment-item {
+/* .detail-coment-item {
   color: var(--secondary-color);
   background-color: var(--third-color);
   margin-bottom: 1.5em;
@@ -356,9 +348,9 @@ main {
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 2em;
   /* justify-content: center; */
-  text-align: center;
-  padding: 3px;
-}
+  /* text-align: center; */
+  /* padding: 3px; */
+/* } */
 
 .header-coment {
   display: flex;
@@ -374,13 +366,13 @@ main {
   font-size: 1.5em;
   margin: 0;
 }
-.teks-coment {
+/* .teks-coment {
   margin-top: 20px;
   text-align: center;
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: 800;
-}
+} */
 .coment-bahan {
   font-size: 1em;
   font-weight: lighter;
@@ -459,4 +451,45 @@ footer p {
 footer p a {
   color: #db0000;
   text-decoration: none;
+}
+
+
+.desc{
+  box-shadow: 5px 5px 10px 1px #000000;
+}
+
+.tentang{
+  animation: wipe-cinematic-in 2s ease 0s 1 normal forwards;
+}
+@keyframes wipe-cinematic-in {
+  0% {
+    clip-path: inset(100% 0 100% 0);
+  }
+  30%, 70% {
+    clip-path: inset(10% 0 10% 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:cinematic"] {
+   animation-name: wipe-cinematic-in;
+}
+
+
+.jelajah{
+  animation: wipe-in-top-right 2s ease 0s 1 normal forwards;
+}
+@keyframes wipe-in-top-right {
+  from {
+    clip-path: polygon(-50% 50%, 50% 150%, 50% 150%, -50% 50%);
+  }
+  to {
+    clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+  }
+}
+
+[transition-style="in:wipe:top-right"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-top-right both;
 }
