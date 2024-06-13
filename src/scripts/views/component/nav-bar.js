@@ -13,9 +13,8 @@ class NavBar extends HTMLElement {
   <nav id="navigationDrawer" class="app-bar__navigation">
     <ul>
       <li><a href="#/home">Home</a></li>
-      <li><a href="#/daerah">Daerah</a></li>
+      <li><a href="#/daerah">Provinsi</a></li>
       <li><a href="#/favorite">Favorite</a></li>
-      <li><a href="https://www.instagram.com/fathi_rhs/">About Us</a></li>
     </ul>
   </nav>
   </header>
