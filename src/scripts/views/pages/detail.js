@@ -8,7 +8,6 @@ import PostComent from "../../utils/post-coment";
 const Detail = {
   async render() {
     return `
-    <div class="content">
       <div id="makanan" class="food"></div>
       <div id="likeButtonContainer"></div>
 
