@@ -1,4 +1,4 @@
-import UrlParser from "../../routes/url-parser";
+  import UrlParser from "../../routes/url-parser";
 import MakananSource from "../../data/makanandb-source";
 import { createDaerahDetailTemplate } from "../templates/template-creator";
 import LikeButtonInitiator from "../../utils/like-button-initiator";
