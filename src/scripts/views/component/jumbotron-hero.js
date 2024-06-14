@@ -4,8 +4,11 @@ class JumbotronHero extends HTMLElement {
     this.innerHTML = ` 
     <article>
     <picture>
-      <source media="(max-width: 600px)" srcset="./images/heros/banner-small.jpg" >
-      <img  class="jumbotron" src="./images/heros/banner-large.jpg" alt="web image">
+     <source media="(max-width: 600px)" srcset="./images/heros/banner-small.jpg" >
+      <div class="relative lg:h-[1000px] h-[300px] w-full text-center">
+      <img  class="jumbotron absolute" src="./images/heros/banner-large.jpg" alt="web image">
+      <p class="tentang absolute text-white text-5xl w-full lg:top-[500px] top-[180px]">Selamat Datang Di <span class="text-[#ABA944]">SABORAMA</span><br>Sajian Budaya Lokal Melalui Kuliner</p>
+      </div>
     </picture>
     </article>
         `;
