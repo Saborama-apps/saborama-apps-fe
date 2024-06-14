@@ -1,4 +1,4 @@
-  import UrlParser from "../../routes/url-parser";
+import UrlParser from "../../routes/url-parser";
 import MakananSource from "../../data/makanandb-source";
 import { createDaerahDetailTemplate } from "../templates/template-creator";
 import LikeButtonInitiator from "../../utils/like-button-initiator";
@@ -16,8 +16,8 @@ const DetailDaerah = {
   },
 
   async afterRender() {
-    const url = UrlParser.parseActiveUrlWithoutCombiner();
-    const daerah = await MakananSource.daerahDetail(url.id);
+    const urll = UrlParser.parseActiveUrlWithoutCombiner();
+    const daerah = await MakananSource.daerahDetail(urll.daerahId);
     const daerahContainer = document.querySelector("#daerah");
 
     daerahContainer.innerHTML = createDaerahDetailTemplate(daerah.daerah);
