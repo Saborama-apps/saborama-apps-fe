@@ -3,7 +3,7 @@ class FooterBar extends HTMLElement {
     super();
     this.innerHTML = ` 
       <p>
-      Copyright © 2024 - Warsep Apps
+      Copyright © 2024 - Saborama Apps
     </p>
             `;
   }
