@@ -130,7 +130,7 @@ const createDaerahDetailTemplate = (daerah) => `
         </div>
       </div>
       <div class="food-item__content">
-        <h3 class="food__title"><a href="/#/detail/${makanan.id}">${makanan.name || '-'}</a></h3>
+<h3 class="food__title"><a href="/#/detail-daerah/${daerah.daerahId}">${daerah.name || '-'}</a></h3>
         <p>${makanan.description || '-'}</p>
         
       </div>
