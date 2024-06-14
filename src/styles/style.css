@@ -78,8 +78,6 @@ body {
 }
 
 .logo {
-  width: 30vw; 
-  height: 50vh; 
   background-size: cover;
   background-position: center;     
 }
@@ -313,10 +311,10 @@ main {
   */
 
 .food {
-  margin: 0 auto;
+  margin-left: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px 16px;
+  gap: 16px;
 }
 
 .food .food__poster {
