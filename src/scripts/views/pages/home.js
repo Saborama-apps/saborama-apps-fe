@@ -7,7 +7,7 @@ const Home = {
     <section class="flex flex-wrap justify-center tentang gap-36 my-36">
     <img class="logo lg:w-[30vw] lg:h-[50vh]" src="./images/heros/saborama.png" alt="web image">
     <div class="tentang">
-        <div><p class="lg:text-6xl text-2xl text-[#ABA944]">SABORAMA</p></div>
+        <div><p class="lg:text-6xl text-3xl text-[#ABA944]">SABORAMA</p></div>
         <div class="lg:w-[600px] h-56 p-2 ">
             <p class="text-gray-600">
                 Selamat datang di Saborama, tempat di mana rasa dan budaya bertemu dalam harmoni yang sempurna. Saborama adalah destinasi digital yang dirancang untuk membawa Anda menjelajahi kekayaan kuliner Nusantara, dari Sabang hingga Merauke. Melalui Saborama, kami mengajak Anda untuk menikmati kelezatan makanan khas dari setiap provinsi di Indonesia sambil mendalami cerita-cerita menarik yang menyertainya.
