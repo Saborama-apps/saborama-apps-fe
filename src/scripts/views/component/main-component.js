@@ -9,3 +9,11 @@ class mainContent extends HTMLElement {
 }
 
 customElements.define('main-content', mainContent);
+
+
+
+
+
+
+
+
