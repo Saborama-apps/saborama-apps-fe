@@ -20,19 +20,29 @@ class App {
     });
   }
 
-  async renderPage() {
-    const url = UrlParser.parseActiveUrlWithCombiner();
-    const page = routes[url];
+async renderPage() {
+  const url = UrlParser.parseActiveUrlWithCombiner();
+  console.log(`Parsed URL: ${url}`); // Debugging line
+  const page = routes[url];
+  console.log(`Page object:`, page); // Debugging line
+
+  if (page) {
     this._content.innerHTML = await page.render();
     await page.afterRender();
-    const skipLink = document.querySelector('.skip-link');
-    const mainContent = document.querySelector('#mainContent');
-    skipLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      mainContent.scrollIntoView({ behavior: 'smooth' });
-      skipLink.blur();
-    });
+  } else {
+    this._content.innerHTML = '<h2>Page not found</h2>';
+    console.error(`No route found for URL: ${url}`);
   }
+
+  const skipLink = document.querySelector('.skip-link');
+  const mainContent = document.querySelector('#mainContent');
+  skipLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    mainContent.scrollIntoView({ behavior: 'smooth' });
+    skipLink.blur();
+  });
+}
+
 }
 
 export default App;
