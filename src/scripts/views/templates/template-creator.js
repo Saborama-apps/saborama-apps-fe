@@ -4,19 +4,18 @@
 const createMakananDetailTemplate = (makanan) => `
     <div class="food__overview lg:flex gap-20 my-24 shadow-2xl p-8">
     <div class="food__info">
-        <h2 class="food__title text-4xl">${makanan.name || '-'}</h2>
+        <h2 class="food__title font-semibold text-gray-700 text-4xl mb-5">${makanan.name || '-'}</h2>
         <img
-            class="food__poster"
+            class="food__poster mb-5"
             src="${
     makanan.image
     }"
             alt="${makanan.name}"
         />
-            <h3>Information</h3>
             <h4 class="font-semibold text-gray-700 text-2xl">
                 Publisher : <span class="font-normal">${makanan.publisher}</span>
             </h4>
-            <h4>Rating : <span class="font-normal">⭐️ ${makanan.rating}</span></h4>
+            <h4 class="font-semibold text-gray-700 text-2xl">Rating : <span class="font-normal">⭐️ ${makanan.rating}</span></h4>
         </div>
         <div class="food__ringkasan shadow-2xl p-5">
             <h3 class="text-3xl font-semibold text-gray-700 mb-4 flex items-center">
@@ -39,6 +38,10 @@ const createMakananDetailTemplate = (makanan) => `
             <p class="text-base font-normal leading-relaxed">
                 ${makanan.description}
             </p>
+            <p class="text-base font-normal leading-relaxed">
+                ${makanan.bahan}
+            </p>
+            <br>
             <div class="shadow-2xl p-5 top-7">
             <h3 class="text-3xl font-semibold text-gray-700 mb-4 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="size-9 text-orange-700">
@@ -48,7 +51,7 @@ const createMakananDetailTemplate = (makanan) => `
             <span class="ml-4">Tingkat Kesulitan</span>
             </h3> 
         
-            <p>${makanan.tingkatSulit}</p>
+            <p class="text-2xl">${makanan.tingkatSulit}</p>
             </div>
             <div class="shadow-2xl p-5 top-7">
             <h3 class="text-3xl font-semibold text-gray-700 mb-4 flex items-center">
@@ -57,24 +60,35 @@ const createMakananDetailTemplate = (makanan) => `
             </svg>
             <span class="ml-4">Waktu Pengerjaan</span>
             </h3> 
-        
-              <p>${makanan.waktu}</p>
+     
+              <p class="text-2xl">${makanan.waktu}</p>
             </div>
         </div>
     </div>
 
-    <h2 tabindex="0" id="makan-detail-form-coment-title" class="teks-coment">
-        <span class="text-4xl">Coment</span>
-    </h2>
+    <h2 tabindex="0" id="makan-detail-form-coment-title" class="font-bold text-5xl text-center  text-gray-700"> Ulasan </h2>
     <div tabindex="0" class="detail-coment">
-        ${makanan.coments .map( (coment) => `
-        <div class="detail-coment-item">
-            <div class="coment-header">
-                <p class="coment-name">${coment.name}</p>
+      ${makanan.coments
+    .map(
+      (coment) => `
+       <div class="detail-comment-item bg-white rounded-lg shadow-lg p-6 mb-4 transform rotate-2">
+            <div class="comment-header flex items-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 mr-5">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
+            </svg>
+            <p class="comment-name text-lg font-semibold text-gray-800">
+            ${coment.name}
+            </p>
             </div>
-            <div class="coment-body">${coment.komentar}</div>
+            <div class="comment-body text-gray-700">
+                <p>${coment.komentar}</p>
+            </div>
         </div>
-        `, ) .join('')}
+
+
+      `,
+    )
+    .join('')}
     </div>
   
 `;
