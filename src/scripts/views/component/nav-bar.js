@@ -9,7 +9,7 @@ class NavBar extends HTMLElement {
   <div class="app-bar__brand">
   <img class="image-brand w-36 h-24 mr-5" src="./images/heros/saboramaa.png" alt="web image">
   </div>
-  <nav id="navigationDrawer" class="app-bar__navigation">
+  <nav id="navigationDrawer" class="app-bar__navigation mt-3">
     <ul>
       <li><a href="#/home">Home</a></li>
       <li><a href="#/daerah">Provinsi</a></li>
