@@ -1,7 +1,7 @@
 
 # Saborama
 
-## apa itu Saborama?
+## Apa itu Saborama?
 Aplikasi "Saborama" adalah sebuah platform digital yang didedikasikan untuk menggali, mendokumentasikan, dan mempromosikan makanan khas dari setiap sudut Indonesia. Dari rendang yang kaya rempah di Sumatra hingga papeda yang unik di Papua, kami berkomitmen untuk menyajikan kekayaan rasa dan cerita di balik setiap hidangan.
 
 
