@@ -432,24 +432,7 @@ main {
 .btn:hover {
   background-color: #45a049;
 }
-/*
-    Footer
-  */
 
-footer {
-  padding: 16px;
-  background-color: #3c5b6f;
-}
-
-footer p {
-  text-align: center;
-  color: #aaaaaa;
-}
-
-footer p a {
-  color: #db0000;
-  text-decoration: none;
-}
 
 
 .desc{
