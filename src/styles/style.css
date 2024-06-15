@@ -54,7 +54,7 @@ body {
 
 .app-bar {
   padding: 8px 16px;
-  background-color: #3c5b6f;
+  background-color: #31363F;  
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
@@ -62,6 +62,7 @@ body {
   top: 0;
   z-index: 99;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  
 }
 
 .app-bar .app-bar__menu {
@@ -110,7 +111,7 @@ body {
   width: 150px;
   transition: all 0.3s;
   padding: 8px;
-  background-color: #3c5b6f;
+  background-color: #31363F;
   overflow: hidden;
 }
 .hamburgerButton {
