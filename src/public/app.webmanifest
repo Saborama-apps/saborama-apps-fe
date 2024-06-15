@@ -1,9 +1,9 @@
 {
-  "id": "resto-catalogue-lite-pwa-1",
+  "id": "Saborama Apps-manifest",
   "start_url": "./index.html",
-  "name": "Resto Catalogue Lite",
-  "short_name": "Resto Lite",
-  "description": "Free Catalogue Resto for you",
+  "name": "Saborama Apps",
+  "short_name": "Saboramaapps",
+  "description": "Capstone Project",
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#D84315",
