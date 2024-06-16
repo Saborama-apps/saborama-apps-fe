@@ -182,6 +182,10 @@ main {
   min-height: 100%;
 }
 
+.jelajah {
+  margin-bottom: 90px;
+}
+
 .content .content__heading {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
