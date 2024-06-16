@@ -50,7 +50,10 @@ class FooterBar extends HTMLElement {
                           <a href="https://github.com/gilangsetiawanp" class="hover:underline">Gilang Setiawan</a>
                       </li>
                       <li>
-                          <a href="https://github.com/thoriqarr21" class="hover:underline">Muhammad Thoriq</a>
+                          <a href="https://github.com/thoriqarr21" class="hover:underline">Muhammad Thoriq Ar Rasyid</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/tsaqifdb" class="hover:underline">Tsaqif Deniar Bhakti</a>
                       </li>
                   </ul>
               </div>
