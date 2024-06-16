@@ -4,7 +4,7 @@ import { createMakananItemTemplate } from "../templates/template-creator";
 const Home = {
   async render() {
     return `
-    <section class="flex flex-wrap justify-center tentang gap-36 my-36">
+    <section class="flex flex-wrap justify-center tentang gap-36 my-6">
     <img class="logo lg:w-[30vw] lg:h-[50vh]" src="./images/heros/saborama.png" alt="web image">
     <div class="tentang">
         <div><p class="lg:text-6xl text-3xl text-[#ABA944]">SABORAMA</p></div>
@@ -20,7 +20,7 @@ const Home = {
     </section>
 
 
-<section class="flex justify-center mt-0 mb-72 jelajah">
+<section class="flex justify-center jelajah">
 <div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
 <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
     <div class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
